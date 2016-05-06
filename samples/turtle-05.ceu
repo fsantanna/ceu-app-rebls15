@@ -276,7 +276,7 @@ with
         end
 
         native @plain _char;
-        var _char[255] cmd;
+        var _char[255] cmd = [];
         var int vel=0, time=0;
         async/thread (cmd,vel,time) do
             _get_cmd(&&cmd, &&vel, &&time);
